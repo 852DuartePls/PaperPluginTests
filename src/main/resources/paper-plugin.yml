@@ -1,0 +1,6 @@
+name: PaperPluginsTest
+version: '0.0.1'
+main: me.duart.paperPluginsTest.PaperPluginsTest
+api-version: '1.21'
+authors: [ DaveDuart ]
+description: Some test i'd like to archive for future guidance
