@@ -10,6 +10,17 @@ import org.jetbrains.annotations.NotNull;
 
 public class AnimalFeedingEvent implements Listener {
 
+    /**
+     * Mocks an AnimalFeedingEvent when a player feeds an animal.
+     * Only triggers if the animal is not in love mode and the player
+     * is holding a valid breeding item.
+     * <p>
+     * Unlike the standard EntityBreedEvent, this does not require a second
+     * animal to fire; it is triggered purely by the player feeding a single animal.
+     * </p>
+     *
+     * @param event the player interaction event
+     */
     @EventHandler
     public void onAnimalFeed(@NotNull PlayerInteractEntityEvent event) {
         if (!(event.getRightClicked() instanceof Animals animal)) return;
